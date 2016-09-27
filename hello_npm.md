@@ -158,6 +158,34 @@ npm install <packageName> --save-dev
 [npm 模块安装机制简介:阮一峰](http://www.ruanyifeng.com/blog/2016/01/npm-install.html)   
 [package.json文件:阮一峰](http://javascript.ruanyifeng.com/nodejs/packagejson.html) 
 
+## 9.PATH环境变量  
+如果想更加简短的执行常用命令，就需要配置命令环境了。  
+```
+$ babel --version
+6.14.0 (babel-core 6.14.0)
+$ babel-node --version
+6.14.0
+```
+但是我没有配置环境变量也能运行这些内容啊-  - 没有错误提示 然后在`echo $PATH`中并没有发现`./node_modules/.bin`
+
+## 10 遇到的问题
+
+ .babelrc文件要放到哪：  
+ 
+```
+你运行babel命令的地方 
+比如 C:/demos/ 的项目目录
+那么.babelrc文件应该是c:/demos/.babelrc 
+而你运行babel命令应该在 c:/demos/ 位置上运行
+```  
+
+windows下的node的环境变量有些问题。
+ 
+ 
+参考资料：  
+[npm 模块安装机制简介:阮一峰](http://www.ruanyifeng.com/blog/2016/01/npm-install.html)   
+[package.json文件:阮一峰](http://javascript.ruanyifeng.com/nodejs/packagejson.html) 
+
 
 
 
